@@ -89,11 +89,20 @@
 			border-top: none !important;
 		}
 		&__list{
+			width: 100%;
 			margin-top: 30px;
 			justify-content: space-around;
 		}
 	}
-	@include mq(650px, max){
+	@include  mq(770px, max){
+		&__list{
+			justify-content: space-between;
+		}
+		&__item{
+			width: 110px;
+		}
+	}
+	@include mq(680px, max){
 		&__main{
 			flex-direction: column;
 		}
@@ -109,6 +118,7 @@
 		}
 		&__button{
 			margin-top: 20px;
+			margin-bottom: 20px;
 		}
 		&__link{
 			display: flex;
@@ -125,6 +135,9 @@
 		}
 		&>.wrapper{
 			padding: 0 !important;
+		}
+		&__submenu{
+			display: none !important;
 		}
 	}
 	&_fixed{
