@@ -1,0 +1,81 @@
+.header{
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 82px;
+	box-shadow: $bottomShadow;
+	&__main{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+	&__info{
+		width: 100%;
+		max-width: 204px;
+		font-size: 13px;
+		@include helvetica-light;
+	}
+	&__adress, &__telephone{
+		@include helvetica-light;
+	}
+	&__adress{
+		span{
+			@include helvetica-light;
+			font-size: 17px;
+			color: $mainColor;
+		}
+	}
+	&__telephone{
+		span{
+			color: $mainColor;
+			@include helvetica-light;
+			font-size: 13px;
+			span{
+				font-size: 22px;
+			}
+		}
+	}
+	&__blind-button{
+		width: 100%;
+		max-width: 220px;
+		height: 36px;
+		color: $whiteColor;
+		background-color: $secondaryColor;
+	}
+	@include mq(1050px, max){
+		height: auto;
+		&__main{
+			flex-wrap: wrap;
+		}
+		&__info{
+			display: none;
+		}
+	}
+	@include mq(900px, max){
+		&__main{
+			justify-content: space-around;
+		}
+		&__blind-button{
+			display: none;
+		}
+	}
+	@include mq(680px, max){
+		overflow: hidden;
+		box-shadow: none;
+		&__main{
+			
+		}
+		&__logo{
+			margin: 20px 0;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+		&__adress, &__telephone{
+			width: 100%;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+}

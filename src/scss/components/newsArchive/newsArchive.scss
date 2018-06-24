@@ -1,0 +1,26 @@
+.news-archive{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	padding-bottom: 73px;
+	&__main{
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	&__archive{
+		margin-top: 35px;
+		&-title{
+			border-bottom: solid 1px #dcdcdc;
+			padding-bottom: 8px;
+			margin-top: 0;
+		}
+		&-list{
+			margin-top: 20px;
+		}
+		&-section{
+			margin-bottom: 50px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}

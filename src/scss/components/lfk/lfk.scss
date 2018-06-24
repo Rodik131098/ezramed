@@ -1,0 +1,30 @@
+.lfk{
+	padding-bottom: 115px;
+	&__title{
+		font-size: 26px;
+		font-weight: 500;
+	}
+	&__content{
+		margin-top: 25px;
+	}
+	&__img{
+		width: 100%;
+		max-width: 400px;
+		float: left;
+		margin-right: 55px;
+	}
+	&__par{
+		@include helvetica-light;
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+	@include mq(1120px, max){
+		&__img{
+			display: block;
+			margin: 0 auto;
+			float: none;
+			margin-bottom: 30px;
+		}
+	}
+}

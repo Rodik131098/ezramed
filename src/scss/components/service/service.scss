@@ -1,0 +1,39 @@
+.service{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	padding-bottom: 40px;
+	&__main{
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	&__img{
+		width: 100%;
+		max-width: 387px;
+	}
+	&__title{
+		@include helvetica-bold;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	&__disc{
+		margin: 35px 0;
+		display: flex;
+		align-items: center;
+	}
+	&__par{
+		margin-left: 35px;
+		@include helvetica-light;
+		font-size: 15px;
+		color: #6f6f6f;
+		line-height: 1.2;
+	}
+	@include mq(900px, max){
+		&__disc{
+			flex-direction: column;
+		}
+		&__par{
+			margin: 20px 0 0 0;
+		}
+	}
+}

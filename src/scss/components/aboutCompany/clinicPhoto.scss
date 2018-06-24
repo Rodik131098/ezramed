@@ -1,0 +1,42 @@
+.clinic-photo{
+	&__title{
+		text-align: center;
+		@include helvetica-bold;
+		font-size: 22px;
+		margin-top: 40px;
+	}
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 40px;
+	}
+	&__gallery{
+		width: 100%;
+		max-width: 1006px;
+		overflow: hidden;
+	}
+	&__slide{
+		padding-bottom: 20px;
+	}
+	&__slide-image{
+		margin: 0 auto;
+		width: 90%;
+	}
+	&__arrow{
+		cursor: pointer;
+	}
+	&_shadow-bottom{
+		box-shadow: 0 4px 9px rgba(0, 0, 0, .15);
+		padding-bottom: 70px;
+	}
+	@include mq(1060px, max){
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	@include mq(400px, max){
+		&__arrow{
+			width: 15px;
+		}
+	}
+}

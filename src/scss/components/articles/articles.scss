@@ -1,0 +1,14 @@
+.articles{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	padding-bottom: 60px;
+	&__button{
+		@include helvetica-roman;
+		font-size: 	12px;
+		width: 220px;
+		height: 35px;
+		margin: 0 auto;
+		background-color: $mainColor;
+		color: #fff;
+		margin-top: 43px;
+	}
+}

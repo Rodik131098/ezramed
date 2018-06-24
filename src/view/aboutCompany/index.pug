@@ -1,0 +1,99 @@
+doctype
+html
+	head
+		include ../../includes/common/head.pug
+		+head('О клинике', false)
+	body
+		include ../../includes/common/header.pug
+		.nav.nav_dark
+			.wrapper.wrapper_padding
+				.nav__main
+					ul.nav__list
+						li.nav__item
+							a.nav__link.nav__link_current(href="#") О КЛИНИКЕ
+						li.nav__item
+							a.nav__link(href="/forPatients/") ПАЦИЕНТАМ
+						li.nav__item
+							a.nav__link(href="/specialists/") СПЕЦИАЛИСТЫ
+						li.nav__item
+							a.nav__link(href="/services/") УСЛУГИ
+						li.nav__item
+							a.nav__link(href="/news/") НОВОСТИ
+						li.nav__item
+							a.nav__link(href="/contacts/") КОНТАКТЫ
+					.nav__button.button ЗАПИСАТЬСЯ НА ПРИЕМ
+		.breadcrumbs
+			a(href="/") Главная
+			p / О клинике
+		.about-company
+			.wrapper.wrapper_padding
+				.about-company__main
+					h1.about-company__title О клинике
+					.about-company__content
+						img(src="/img/about-company_image.jpg").about-company__image
+						p.about-company__par «Эзрамед Клиник» - первый в Омске Центр восстановительного лечения, физической реабилитации и спортивной медицины, основанный на междисциплинарном врачебном подходе к предоставлению высококачественной медицинской помощи.
+						p.about-company__par «Эзрамед Клиник» - это сочетание комфорта, быстроты, интенсивности лечения с высокими стандартами восстановительной медицины, физической реабилитации и спортивной медицины. А также реализация образовательных проектов в тесном сотрудничестве с врачами.
+						p.about-company__par Мы предлагаем современные технологии восстановительного лечения в исполнении команды высокопрофессионального медицинского персонала. Мы делаем акцент на индивидуальном подходе к пациенту: большая часть мероприятий и процедур проводится один на один с инструктором.Мы используем опыт и достижения европейской и израильской восстановительной медицины, а также собственные наработки и авторские методики врачей Центра.Мы помогаем пациенту улучшить физическое и эмоциональное состояние, повысить качество жизни. Делаем реабилитацию персонализированным и интенсивным процессом максимально эффективным для пациента.
+		.clinic-photo
+			.wrapper.wrapper_padding
+				.clicnic-photo__main
+					h2.clinic-photo__title Фото нашей клиники
+					.clinic-photo__content
+						img(src="/img/about-clinic_arrow-left.png").clinic-photo__arrow-left.clinic-photo__arrow
+						.clinic-photo__gallery
+							.clinic-photo__slider-photo
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/gallery-photo-1.jpg").clinic-photo__slide-image
+						img(src="/img/about-clinic_arrow-right.png").clinic-photo__arrow-right.clinic-photo__arrow
+		.clinic-photo.clinic-photo_shadow-bottom
+			.wrapper.wrapper_padding
+				.clicnic-photo__main
+					h2.clinic-photo__title Видео нашей клиники
+					.clinic-photo__content
+						img(src="/img/about-clinic_arrow-left.png").clinic-photo__video-arrow-left.clinic-photo__arrow
+						.clinic-photo__gallery
+							.clinic-photo__slider-video
+								.clinic-photo__slide
+									img(src="/img/video-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-2.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-3.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-4.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-5.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-1.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-2.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-3.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-4.jpg").clinic-photo__slide-image
+								.clinic-photo__slide
+									img(src="/img/video-5.jpg").clinic-photo__slide-image
+						img(src="/img/about-clinic_arrow-right.png").clinic-photo__video-arrow-right.clinic-photo__arrow
+		include ../../includes/common/footer.pug

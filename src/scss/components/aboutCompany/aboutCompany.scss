@@ -1,0 +1,31 @@
+.about-company{
+	&__title{
+		@include helvetica-bold;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	&__content{
+		width: 100%;
+		max-width: 900px;
+		margin: 40px auto 0 auto;
+	}
+	&__image{
+		float: left;
+		margin-right: 25px;
+		margin-bottom: 20px;
+	}
+	&__par{
+		@include helvetica-light;
+		font-size: 16px;
+		margin-bottom: 30px;
+		line-height: 1.5;
+	}
+	@include mq(900px, max){
+		&__image{
+			display: block;
+			margin: 0 auto 30px auto;
+			float: none;
+		}
+	}
+}

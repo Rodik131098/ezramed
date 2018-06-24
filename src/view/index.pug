@@ -1,0 +1,36 @@
+doctype
+html
+	head
+		include ../includes/common/head.pug
+		+head('Главная', true)
+	body
+		include ../includes/common/header.pug
+		.nav
+			.wrapper.wrapper_padding
+				.nav__main
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="/aboutCompany/") О КЛИНИКЕ
+						li.nav__item
+							a.nav__link(href="/forPatients/") ПАЦИЕНТАМ
+						li.nav__item
+							a.nav__link(href="/specialists/") СПЕЦИАЛИСТЫ
+							.nav__submenu
+								a.nav__sublink(href="/specialists/") СПЕЦИАЛИСТЫ
+								a.nav__sublink(href="/specialists/") СПЕЦИАЛИСТЫ
+								a.nav__sublink(href="/specialists/") СПЕЦИАЛИСТЫ
+						li.nav__item
+							a.nav__link(href="/services/") УСЛУГИ
+						li.nav__item
+							a.nav__link(href="/news/") НОВОСТИ
+						li.nav__item
+							a.nav__link(href="/contacts/") КОНТАКТЫ
+					.nav__button.button ЗАПИСАТЬСЯ НА ПРИЕМ
+		include ../includes/home/block-1.pug
+		include ../includes/home/block-2.pug
+		include ../includes/home/block-3.pug
+		include ../includes/home/block-4.pug
+		include ../includes/home/block-5.pug
+		include ../includes/home/block-6.pug
+		include ../includes/home/block-7.pug
+		include ../includes/common/footer.pug

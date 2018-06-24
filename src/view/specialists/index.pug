@@ -1,0 +1,29 @@
+doctype
+html
+	head
+		include ../../includes/common/head.pug
+		+head('Пациентам', false)
+	body
+		include ../../includes/common/header.pug
+		.nav.nav_dark
+			.wrapper.wrapper_padding
+				.nav__main
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="/aboutCompany/") О КЛИНИКЕ
+						li.nav__item
+							a.nav__link(href="/forPatients/") ПАЦИЕНТАМ
+						li.nav__item
+							a.nav__link.nav__link_current(href="/specialists/") СПЕЦИАЛИСТЫ
+						li.nav__item
+							a.nav__link(href="/services/") УСЛУГИ
+						li.nav__item
+							a.nav__link(href="/news/") НОВОСТИ
+						li.nav__item
+							a.nav__link(href="/contacts/") КОНТАКТЫ
+					.nav__button.button ЗАПИСАТЬСЯ НА ПРИЕМ
+		.breadcrumbs
+			a(href="/") Главная
+			p / Специалисты
+		include ../../includes/specialists/specialists.pug
+		include ../../includes/common/footer.pug

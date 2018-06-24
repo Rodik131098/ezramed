@@ -1,0 +1,94 @@
+.news{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	padding-bottom: 40px;
+	&__title{
+		@include helvetica-bold;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 45px;
+		width: 100%;
+		max-width: 900px;
+		margin: 45px auto 0 auto;
+	}
+	&__item{
+		width: 100%;
+		max-width: 285px;
+		margin-bottom: 20px;
+		$r: &;
+		&-link{
+			position: relative;
+			display: block;
+			height: 180px;
+			cursor: pointer;
+			&:hover{
+				#{$r}-cloak{
+					opacity: 1;
+					transition: opacity .333s;
+				}
+			}
+		}
+		&-image{
+			width: 100%;
+			height: 100%;
+		}
+		&-cloak{
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			position: absolute;
+			background-color: rgba(0, 0, 0, .45);
+		}
+		&-title{
+			@include helvetica-bold;
+			font-size: 15px;
+			text-align: center;
+			margin-top: 15px;
+		}
+		&-par{
+			@include helvetica-light;
+			font-size: 14px;
+			color: #575757;
+			line-height: 1.5;
+			letter-spacing:  1px;
+			margin-top: 15px;
+		}
+		&-date{
+			@include helvetica-light;
+			font-size: 12px;
+			color: #8c8c8c;
+			margin-top: 10px;
+		}
+	}
+	&__button{
+		width: 195px;
+		height: 35px;
+		background-color: $mainColor;
+		margin: 0 auto;
+		@include helvetica-light;
+		font-size: 15px;
+		color: #fff;
+		margin-top: 15px;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+	}
+	@include mq(930px, max){
+		&__item{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+	@include mq(700px, max){
+		&__list{
+			flex-direction: column;
+			align-items: center;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+}

@@ -1,0 +1,122 @@
+.specialist{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	padding-bottom: 60px;
+	&__main{
+		width: 100%;
+		max-width: 975px;
+		margin: 0 auto;
+
+	}
+	&__biography{
+		display: flex;
+		margin-top: 40px;
+		&-inform{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 35px;
+		}
+		&-name{
+			@include helvetica-medium;
+			font-size: 18px;
+			color: #464646;
+		}
+		&-par{
+			@include helvetica-light;
+			font-size: 15px;
+			color: #676767;
+			margin-top: 20px;
+			line-height: 1.2;
+		}
+		&-button{
+			@include helvetica-light;
+			font-size: 14px;
+			width: 170px;
+			height: 35px;
+			background-color: $mainColor;
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+	&__education{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 40px;
+		&-title{
+			@include helvetica-medium;
+			width: 100%;
+			font-size: 18px;
+			color: #464646;
+			border-bottom: solid 1px #b8b8b8;
+			padding-bottom: 15px;
+		}
+		&-par{
+			@include helvetica-light;
+			font-size: 15px;
+			color: #676767;
+			margin-top: 25px;
+		}
+		&-link{
+			display: inline-block;
+			margin-top: 30px;
+			color: $mainColor;
+			border-bottom: dashed 1px $mainColor;
+		}
+	}
+	&__regalies{
+		margin-top: 50px;
+		&-title{
+			@include helvetica-medium;
+			font-size: 18px;
+			color: #464646;
+			border-bottom: solid 1px #b8b8b8;
+			padding-bottom: 20px;
+		}
+		&-list{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 30px;
+		}
+		&-item{
+			width: 185px;
+		}
+		&-img{
+			width: 100%;
+		}
+		&-par{
+			margin-top: 15px;
+			@include helvetica-light;
+			font-size: 15px;
+			color: #676767;
+			text-align: center;
+		}
+	}
+	@include mq(900px, max){
+		&__biography{
+			flex-direction: column;
+			align-items: center;
+			&-inform{
+				margin: 30px 0 0 0;
+			}
+		}
+	}
+	@include mq(840px, max){
+		&__regalies{
+			&-list{
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			&-item{
+				margin: 0 50px 30px 50px;
+			}
+		}
+	}
+	@include mq(620px, max){
+		&__regalies{
+			&-item{
+				margin: 0 10px 30px 10px;
+			}
+		}
+	}
+}

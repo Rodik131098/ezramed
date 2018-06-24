@@ -1,0 +1,27 @@
+.for-patients{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	&__title{
+		@include helvetica-bold;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 45px;
+	}
+	&__main{
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+		padding-bottom: 105px;
+
+	}
+	&__par{
+		@include helvetica-light;
+		font-size: 15px;
+		color: #464646;
+		margin-bottom: 20px;
+		line-height: 1.5;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+}

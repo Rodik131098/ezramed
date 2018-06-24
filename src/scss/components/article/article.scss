@@ -1,0 +1,35 @@
+.article{
+	box-shadow: 0 5px 3px rgba(0, 0, 0, .15);
+	padding-bottom: 70px;
+	&__main{
+		max-width: 945px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__content{
+		margin-top: 30px;
+	}
+	&__img{
+		float: left;
+		width: 100%;
+		max-width: 422px;
+		margin-right: 24px;
+	}
+	&__par{
+		@include helvetica-light;
+		font-size: 15px;
+		margin-bottom: 25px;
+		line-height: 1.5;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	@include mq(760px, max){
+		&__img{
+			display: block;
+			float: none;
+			margin: 0 auto;
+			margin-bottom: 25px;
+		}
+	}
+}

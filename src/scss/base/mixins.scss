@@ -1,0 +1,82 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate3d(-50%, -50%,0);
+}
+
+@mixin absolute-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin absolute-horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin helvetica-light {
+  font-family: HelveticaNeueCyr;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@mixin helvetica-medium {
+  font-family: HelveticaNeueCyr;
+  font-weight: 500;
+}
+
+@mixin helvetica-ultraLight {
+  font-family: HelveticaNeueCyr;
+  font-weight: 200;
+}
+
+@mixin helvetica-roman {
+  font-family: HelveticaNeueCyr;
+  font-weight: normal;
+}
+
+@mixin helvetica-bold {
+  font-family: HelveticaNeueCyr;
+  font-weight: bold;
+}
+
+@mixin helvetica-condensed{
+  font-family: HelveticaNeue-CondensedBold;
+  font-weight: normal;
+}
+
+@mixin gotham-medium {
+  font-family: Gotham Pro;
+  font-weight: 500;
+}
+
+@mixin gotham-bold {
+  font-family: Gotham Pro;
+  font-weight: bold;
+}
+
+@mixin gotham-light {
+  font-family: Gotham Pro;
+  font-weight: 300;
+}
+
+@mixin futura-bookC {
+  font-family: FuturaBookC;
+  font-weight: normal;
+}
+@mixin mq($width, $type: min) {
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
