@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	(function clearInput(){
 		var inputs = document.querySelectorAll('.js-clear-value');
 		var count;
-		console.log(inputs);
 		for(count = 0; count < inputs.length; count++){
 
 			inputs[count].addEventListener('focus', function(e){
@@ -149,5 +148,18 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 
         });
+	})();
+
+	//Обработка подменю на мобилке
+	(function() {
+        if ($(window).width() < 680){
+        	$('.sub-item').removeClass('nav__item_show-sub');
+            $('.sub').on('click', function (e) {
+                e.preventDefault();
+            });
+            $('.sub-item').on('click', function(e){
+                $(this).find('.nav__submenu').toggle();
+            });
+    	}
 	})();
 });

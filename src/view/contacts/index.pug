@@ -9,18 +9,31 @@ html
 			.wrapper.wrapper_padding
 				.nav__main
 					ul.nav__list
-						li.nav__item
-							a.nav__link(href="/aboutCompany/") О КЛИНИКЕ
-						li.nav__item
-							a.nav__link(href="/forPatients/") ПАЦИЕНТАМ
+						li.nav__item.sub-item.nav__item_show-sub
+							a.nav__link.sub(href="/aboutCompany/") О КЛИНИКЕ
+							.nav__submenu
+								a.nav__sublink(href="/aboutCompany/") О клинике
+								a.nav__sublink(href="/partners/") Партнеры
+								a.nav__sublink(href="/questions/") Вопросы и ответы
+						li.nav__item.sub-item.nav__item_show-sub
+							a.nav__link.sub(href="/forPatients/") ПАЦИЕНТАМ
+							.nav__submenu
+								a.nav__sublink(href="/forPatients/") Пациентам
+								a.nav__sublink(href="/articles/") Статьи
+								a.nav__sublink(href="/comments/") Отзывы
+								a.nav__sublink(href="/diagnostics/") Диагностика
+								a.nav__sublink(href="/specialists/") Правовая информация
 						li.nav__item
 							a.nav__link(href="/specialists/") СПЕЦИАЛИСТЫ
-						li.nav__item
-							a.nav__link(href="/services/") УСЛУГИ
+						li.nav__item.sub-item.nav__item_show-sub
+							a.nav__link.sub(href="/services/") УСЛУГИ
+							.nav__submenu
+								a.nav__sublink(href="/services/") Услуги
+								a.nav__sublink(href="/price/") Прайс лист
 						li.nav__item
 							a.nav__link(href="/news/") НОВОСТИ
 						li.nav__item
-							a.nav__link.nav__link_current(href="/contacts/") КОНТАКТЫ
+							a.nav__link(href="/contacts/") КОНТАКТЫ
 					.nav__button.button ЗАПИСАТЬСЯ НА ПРИЕМ
 		.breadcrumbs
 			a(href="/") Главная

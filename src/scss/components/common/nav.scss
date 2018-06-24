@@ -16,8 +16,10 @@
 		align-items: center;
 		height: 70px;
 		width: 125px;
-		&:hover #{$r}__submenu{
-			display: flex;
+		&_show-sub{
+			&:hover #{$r}__submenu{
+				display: flex;
+			}
 		}
 	}
 	&__link{
@@ -48,6 +50,12 @@
 	&_dark{
 		background-color: #716e6d !important;
 		color: #fff;
+		#{$r}__submenu{
+			background-color: #716e6d !important;
+		}
+		#{$r}__sublink{
+			color: #fff !important;
+		}
 	}
 	&_fixed{
 	}
@@ -81,7 +89,7 @@
 		&__main{
 			flex-wrap: wrap-reverse;
 			justify-content: center;
-			align-items: space-between;
+			//align-items: space-between;
 		}
 		&__button{
 			margin-top: 30px;
@@ -101,6 +109,9 @@
 		}
 		&__item{
 			width: 110px;
+			&:hover{
+
+			}
 		}
 	}
 	@include mq(680px, max){
@@ -116,17 +127,28 @@
 			width: 100%;
 			justify-content: center;
 			margin: 0;
+
 		}
 		&__button{
 			margin-top: 20px;
 			margin-bottom: 20px;
+		}
+		&__submenu{
+			border-left: none;
+			border-right: none;
+			border-top: solid 1px #000;
+			border-bottom: solid 1px #000;
+			position: static;
+			font-size: 12px;
 		}
 		&__link{
 			display: flex;
 			justify-content: center;
 			width: 100%;
 			text-align: center;
-			border-top: solid 2px #e4e4e4;
+			height: 100%;
+			min-height: 40px;
+			/*border-top: solid 2px #e4e4e4;*/
 			&:hover{
 				border-top: solid 2px $mainColor;
 			}
@@ -137,8 +159,14 @@
 		&>.wrapper{
 			padding: 0 !important;
 		}
-		&__submenu{
-			display: none !important;
+		&__sublink{
+			border-bottom: none;
+		}
+		&__item.sub-item{
+			display: flex;
+			flex-direction: column;
+			min-height: 40px;
+			height: auto;
 		}
 	}
 	&_fixed{
